@@ -133,3 +133,11 @@ column2 datatype,
 column3 datatype, 
 column4 datatype, 
 );
+
+
+
+ ---- view to assign new patient_id
+  create view qtay.dhd_patiend_id_map1 as
+select distinct id
+from qtay.dhd_users
+order by id;
